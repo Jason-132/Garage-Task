@@ -3,30 +3,30 @@ package java3;
 import java.util.ArrayList;
 
 public class Garage {
+	
 
-	//public static List<String> garage;
+	// public static List<String> garage;
 	static ArrayList<String> garage = new ArrayList<String>();
+
 	public static ArrayList<String> getGarage() {
 		System.out.println(garage);
 		return garage;
 	}
 
-	public static void add_vehicle(Vehicle vehicle) {
-		garage.add(vehicle.make);
+	public static void add_vehicle(String vehicle) {
+		garage.add(vehicle);
 		System.out.println(garage);
 		// System.out.println(garage);
 	}
 
 	public static ArrayList<String> empty_garage() {
-		garage.clear(); 
+		garage.clear();
 		System.out.println(garage);
 		return garage;
 	}
-	
-	public static ArrayList<String> remove_vehicle_by_model(String vehicle_name) {
-		garage.remove(vehicle_name);
-		System.out.println(garage);
-		return garage;
+
+	public static void remove_vehicle_by_make_and_ID(String vehicle) {
+		garage.remove(vehicle);
 	}
 
 	public static int calculate_bill(Vehicle vehicle) {
@@ -37,4 +37,3 @@ public class Garage {
 	}
 
 }
-  
